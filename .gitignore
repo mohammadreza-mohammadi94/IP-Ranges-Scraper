@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
 
 # C extensions
 *.so
@@ -26,6 +27,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+proj-ip.ranges/
+
 
 # PyInstaller
 *.manifest
@@ -129,9 +132,14 @@ dmypy.json
 *.swo
 *~
 
-# OS
-.DS_Store
-Thumbs.db
-
 # Project specific
-*.zone
+logs/
+*.log
+
+# Data directories (optional - uncomment if you don't want to track data)
+data/
+demo_output/
+
+# Old scripts (will be removed after refactoring)
+# scrape_ip_ranges.py
+# convert_cidr_to_ranges.py
